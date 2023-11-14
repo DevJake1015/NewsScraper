@@ -1,12 +1,7 @@
-using NewsScraper.Services;
-using NewsScraper.Services.IServices;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddHostedService<HostedService>();
-builder.Services.AddSingleton<IBackgroundQueueService, BackgroundQueueService>();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
